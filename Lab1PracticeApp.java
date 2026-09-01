@@ -13,8 +13,10 @@ public class Lab1PracticeApp
 {
 	public static void main(String[] args)
 	{
+		//
 		Scanner scnr = new Scanner(System.in);
 		
+		//
 		double price;
 		int quantity;
 		double subtotal;
@@ -22,16 +24,27 @@ public class Lab1PracticeApp
 		double taxRate;
 		double total;
 
+		//
 		System.out.println("Enter a price:");
 		price = scnr.nextDouble();
+		
+		//
 		System.out.println("Enter a quantity:");
 		quantity = scnr.nextInt();
 		
+		//
 		subtotal = price + quantity;
+		
+		//
 		taxRate = 8.5;
+		
+		//
 		taxOwed = subtotal * taxRate / 100;
+		
+		//
 		total = subtotal + taxOwed;	
 
+		//
 		System.out.println("Price:   $" + total);
 		System.out.println("Quantity: quantity");
 		System.out.println("Subtotal:   $" + subtotal);
@@ -39,6 +52,7 @@ public class Lab1PracticeApp
 		System.out.println("Tax:   $" + taxOwed);
 		System.out.println("Total:   $" + price);
 		
+		//
 		scnr.close();
 	}
 }
