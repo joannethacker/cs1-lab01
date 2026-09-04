@@ -1,1 +1,7 @@
 run = "echo 'Please use the Shell tab to run your programs:' && echo '  javac Lab1App.java && java Lab1App' && echo '  javac Lab1PracticeApp.java && java Lab1PracticeApp'"
+
+[languages.java]
+pattern = "**/*.java"
+
+[languages.java.languageServer]
+start = "jdt-language-server -data /tmp/jdtls-workspace"
