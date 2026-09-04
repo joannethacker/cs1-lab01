@@ -1,4 +1,8 @@
+modules = ["java-graalvm22.3", "nix"]
 run = "echo 'Please use the Shell tab to run your programs:' && echo '  javac Lab1App.java && java Lab1App' && echo '  javac Lab1PracticeApp.java && java Lab1PracticeApp'"
+
+[nix]
+channel = "stable-25_05"
 
 [languages.java]
 pattern = "**/*.java"
